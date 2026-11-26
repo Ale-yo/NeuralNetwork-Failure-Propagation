@@ -1,10 +1,10 @@
 # Neural Network Implementation to Predict Failure Propagation in a U-Bolt
 
-Damage propagation and reduced-order neural network modeling on a U-bolt geometry using the Fisher–Kolmogorov–Petrovsky–Piskunov (FKPP) equation, developed for the Model Order Reduction Techniques course at Politecnico di Milano (Assignment 2, by Alessia Cecchini).
+Failure propagation and reduced-order neural network modeling on a U-bolt geometry using the Fisher–Kolmogorov–Petrovsky–Piskunov (FKPP) equation, developed for the Model Order Reduction Techniques course at Politecnico di Milano (Assignment 2, by Alessia Cecchini).
 
 ## Project Overview
 
-The study models spatio-temporal damage propagation $u(\mathbf{x}, t) : \Omega \times [0, T] \to [0, 1]$ on a 2D U-bolt domain with homogeneous Neumann boundary conditions and initial damage localized around $x = \delta$ ($|x - \delta| < 0.1$, $y \ge 4$) up to $T = 0.02$, parametrized by $\boldsymbol{\mu} = [\mu_1, \mu_2, \mu_3]^T \in [0, 1]^3$ ($D = 10^{\mu_1}$, $r = 10^{\mu_2 + 2}$, $\delta = \mu_3 + 1$).
+The study models spatio-temporal damage propagation $u(\mathbf{x}, t) : \Omega \times [0, T] \to [0, 1]$ on a 2D U-bolt domain with homogeneous Neumann boundary conditions and initial damage localized around $x = \delta$ ($|x - \delta| < 0.1$, $y \ge 4$) up to $T = 0.02$.
 
 The notebook covers:
 - **FOM Dataset & Mesh Setup**: Constructing the U-bolt polygon mesh and loading `u-bolt.npz`.
